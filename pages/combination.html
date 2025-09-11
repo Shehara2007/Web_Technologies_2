@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+
+    <style>
+
+        li {
+            color: darkblue;
+        }
+
+        /*----------------------------------- # Child Combinator # -----------------------------------*/
+
+        ol > li:first-child {
+            color: deeppink;
+        }
+
+        /*----------------------------------- # Descendant Combinator # -----------------------------------*/
+
+        ul li {
+            color: red;
+        }
+
+        /*----------------------------------- # Adjacent Combinator # -----------------------------------*/
+
+        h4+div{
+            color: orange;
+        }
+
+        /*----------------------------------- # General Sibling Combinator # -----------------------------------*/
+
+        h4~div{
+            color: lightseagreen;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<ol>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C#</li>
+    <li>C++</li>
+    <li>C</li>
+    <li>Perl</li>
+    <li>Go Lang</li>
+</ol>
+
+<!--<ul>-->
+<!--    <li>JavaScript</li>-->
+<!--    <li>TypeScript</li>-->
+<!--    <li>Reactjs</li>-->
+<!--    <li>Angular</li>-->
+<!--    <li>Vuejs</li>-->
+<!--    <li>Nextjs</li>-->
+<!--    <li>Nodejs</li>-->
+<!--</ul>-->
+
+<div>
+    <h1>Hy</h1>
+    <div>
+        <h1>Hello</h1>
+    </div>
+    <h1>Bye</h1>
+</div>
+
+<ul>
+    <div>
+        <li>Hi</li>
+    </div>
+
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+</ul>
+
+<h4>hi</h4>
+<div>A</div>
+<p>abcd</p>
+<div>B</div>
+<div>C</div>
+
+</body>
+</html>

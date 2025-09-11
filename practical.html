@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        li:nth-child(4n){
+            color: red;
+        }
+        li::after{
+            content: "🤓";
+        }
+        #myText::first-line{
+            background: plum;
+        }
+
+        ::selection{
+            color: darkblue;
+            background: lightseagreen;
+        }
+        input[type = "File"]::file-selector-button{
+            background-color: blueviolet;
+        }
+        input::placeholder{
+             color: red;
+        }
+        h1::marker{
+            content: "🤯";
+        }
+
+        ol Li{
+            background-color: yellowgreen;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<form>
+    <ul>
+        <li id="sasu">c</li>
+        <li>c++</li>
+        <li>java</li>
+        <li>javascript</li>
+        <li>python</li>
+    </ul>
+
+    <h1>IJSE_</h1>
+    <div>
+        <label for = "email"> Email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+    </div>
+
+    <div>
+        <label for = "password"> Password</label>
+        <br>
+        <input type="password" id="password" name="password">
+        <br><br>
+    </div>
+<input type="file">
+    <div>
+        <button type="submit"> login </button>
+        <br>
+    </div>
+
+    <ol>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Css</li>
+        <li>Html</li>
+        <li>Javascript</li>
+    </ol>
+
+    <ul>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Angular</li>
+        <li>V</li>
+        <li>Perl</li>
+    </ul>
+
+</form>
+
+</body>
+</html>

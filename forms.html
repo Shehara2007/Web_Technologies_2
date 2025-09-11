@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+
+<br><br>
+
+<form action="backend.html" method="get">
+    <div>
+        <label for = "email"> Email</label>
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+    </div>
+
+    <div>
+        <label for = "password"> Password</label>
+        <br>
+        <input type="password" id="password" name="password">
+        <br>
+    </div>
+
+    <div>
+      <button type="submit"> Click me</button>
+        <br>
+    </div>
+
+
+
+    <form>
+        <h1>Student registration</h1>
+
+        <!--  <First Name>-->
+        <div>
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname">
+            <br><br>
+        </div>
+
+        <!--  <Last Name>-->
+        <div>
+            <label for="lname">Last Name</label>
+            <br>
+            <input type="text" id="lname">
+            <br><br>
+        </div>
+
+        <!--  <address-->
+        <div>
+            <label for="address">Address</label>
+            <br>
+            <textarea id="address" rows="5" cols="50"></textarea>
+            <br><br>
+        </div>
+
+        <div>
+        <label for="select"> Select the program</label>
+        <select id="select" name="program">
+
+            <optgroup label="front end">
+                <option>java</option>
+                <option>python</option>
+                <option>C</option>
+            </optgroup>
+
+            <optgroup label="back end">
+                <option>javascript</option>
+                <option>HTML</option>
+                <option>CSS</option>
+            </optgroup>
+
+        </select>
+            </div>
+
+        <label>selectGender</label>
+        <br>
+        <input type="radio" id="male" name="gender"><label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender"><label for="female">Female</label>
+        <br>
+        <input type="radio" id="unknown" name="gender"><label for="unknown">Unknown</label>
+        <br><br>
+
+
+        <label>Your Cars Name: </label>
+        <input list="cars" id="carsInput" >
+        <datalist id="cars">
+            <option value="BMW" ></option>
+            <option value="Bentley" ></option>
+            <option value="Mercedes" ></option>
+            <option value="Audi" ></option>
+            <option value="Volkswagen" ></option>
+        </datalist>
+
+        <br><br>
+
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="update">Update</button>
+
+
+    </form>
+
+</form>
+
+</body>
+</html>

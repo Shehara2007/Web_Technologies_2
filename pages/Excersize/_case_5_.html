@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Animation</title>
+    <style>
+        .car {
+            width: 300px;
+            height: 130px;
+            background-color: goldenrod;
+            border-radius: 20px;
+            position: relative;
+            margin: 100px auto;
+            animation: move-car 4s infinite alternate ease-in-out;
+        }
+        .wheel {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 100px;
+            background-color: black;
+            border-radius: 100%;
+            border: 5px dashed wheat;
+            animation: spin 2s linear infinite;
+        }
+        .wheel.left  { left: 20px; }
+        .wheel.right { right: 20px; }
+
+        @keyframes move-car {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(400px); }
+        }
+
+        @keyframes spin {
+            0%   { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="car">
+    <div class="wheel left"></div>
+    <div class="wheel right"></div>
+</div>
+</body>
+</html>

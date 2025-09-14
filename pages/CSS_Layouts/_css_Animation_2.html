@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: lightseagreen;
+
+            animation-name: move;
+            animation-duration: 5000ms;
+            /*animation-delay: 500ms;*/
+
+            animation-direction: normal;
+            /*animation-iteration-count: 5;*/
+            animation-iteration-count: infinite;
+            /*animation-direction: alternate;*/
+            /*animation-direction: alternate-reverse;*/
+            animation-timing-function: ease-in-out;
+
+
+        }
+
+        @keyframes move {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 1000px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

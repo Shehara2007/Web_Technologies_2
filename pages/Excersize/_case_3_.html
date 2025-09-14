@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    :root{
+      --section-width: 800px;
+      --section-height: 500px;
+
+      --div-width: 200px;
+      --div-height: 100px;
+    }
+
+    section {
+      margin: 0;
+      overflow: hidden;
+      width: var(--section-width);
+      height: var(--section-height);
+      border: 5px solid black;
+
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    section>div {
+      width: var(--div-width);
+      height: var(--div-height);
+      background-color: salmon;
+      border-radius: 15px;
+
+      animation-name: myanimation;
+      animation-duration: 3000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes myanimation {
+      0%{
+        margin-left: 0;
+        margin-top: 0;
+        background-color: gold;
+      }
+      25%{
+        margin-left: calc(var(--section-width) - var(--div-width));
+        margin-top: 0;
+        transform: rotate(180deg);
+        background-color: deepskyblue;
+
+      }
+      50%{
+        margin-left: calc(var(--section-width) - var(--div-width));
+        margin-top: calc(var(--section-height) - var(--div-height));
+        transform: rotate(36deg);
+        background-color: red;
+
+      }
+      75%{
+        margin-left:0;
+        margin-top: calc(var(--section-height) - var(--div-height));
+        transform: rotate(540deg);
+        background-color: magenta;
+      }
+      100%{
+        margin-left: 0;
+        margin-top: 0;
+        background-color: aqua;
+        transform: rotate(720deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<section><div></div></section>
+</body>
+</html>

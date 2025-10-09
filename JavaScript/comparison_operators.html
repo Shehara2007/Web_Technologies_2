@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var a = 10;
+    var b = 10;
+    var c = 6;
+    var d = 10;
+
+    //equality (==) check if two values are equal
+    console.log(a == b); //true
+    console.log(a == c); //false
+    console.log(a == d); //true
+
+    //string equality (===) check if two values are equal and of the same type
+    console.log(a === d); //false
+    console.log(a === b); //true
+
+    //inequality (!=) check if two values are not equal
+    console.log(a != c); //true
+    console.log(a != d); //false
+
+    //string inequality (!==) check if two values are not equal or of different types
+    console.log(a !== d); //true
+    console.log(a !== b); //false
+
+    //greater than (>) check if a value is greater than another
+    console.log(a > c); //10 > 6 - true
+
+    //less than (<) check if a value is less than another
+    console.log(a < c); //10 < 6 - false
+
+    //greater than or equal to (>=) check if a value is greater than or equal to another
+    console.log(a > b); //10 > 10 - false
+    console.log(a >= b); //10 >= 10 - true
+
+    //less than or equal to (<=) check if a value is less than or equal to another
+    console.log(a <= b); //10 <= 10 - true
+
+</script>
+
+</body>
+</html>

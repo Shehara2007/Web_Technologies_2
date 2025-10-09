@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<img src="../assest/images/large.jpg" title=" iphone 14" alt="large iphone image" >
+
+<picture>
+    <source media="(min-width:1000px" srcset="../assest/images/large.jpg" type="image/jpg">
+    <source media="(min-width:800px" srcset="../assest/images/medium2.jpg" type="image/jpg">
+    <source media="(min-width:300px" srcset="../assest/images/small.jpg" type="image/jpg">
+    <img src="../assest/images/small2.jpg" title="smalle 2" alt="small2" >
+</picture>
+
+<video controls>
+    <source src="../assest/videos/car.mp4" type="video/mp4">
+    <source src="../assest/videos/car.webm" type="video/webm">
+</video>
+
+<video controls poster="../assest/images/large.jpg">
+    <source src="../assest/videos/car.mp4" type="video/mp4">
+    <source src="../assest/videos/car.webm" type="video/webm">
+</video>
+
+<video controls autoplay muted>
+    <source src="../assest/videos/car.mp4" type="video/mp4">
+    <source src="../assest/videos/car.webm" type="video/webm">
+</video>
+
+<video controls autoplay muted loop>
+    <source src="../assest/videos/car.mp4" type="video/mp4">
+    <source src="../assest/videos/car.webm" type="video/webm">
+</video>
+
+<video controls autoplay muted loop width="800" height="200">
+    <source src="../assest/videos/car.mp4" type="video/mp4">
+    <source src="../assest/videos/car.webm" type="video/webm">
+</video>
+
+<video controls autoplay muted>
+    <source src="../assest/videos/car.mp4" type="video/mp4">
+    <source src="../assest/videos/car.webm" type="video/webm">
+
+    <track src="../assest/videos/subtitles/sample.vtt" kind="subtitles" srclang="en">
+    <track src="../assest/videos/subtitles/arabic.vtt" kind="subtitles" srclang="ar" lang="arabic">
+
+</video>
+
+<audio controls>
+    <source src = "../assest/audios/audio_file1.mp3" type="audio/mp3" >
+    <source src = "../assest/audios/audio_file2.mp3" type="audio/mp3" >
+
+</audio>
+
+</body>
+</html>

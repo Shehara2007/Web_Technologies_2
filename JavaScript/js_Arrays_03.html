@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // push
+
+    var x = [10, 20, "Hello", true, function () {}];
+
+    console.log(x);
+    x.push(40);
+    console.log(x);
+
+    x.push(50, 60);
+    console.log(x);
+
+    //Unshift
+
+    x = [10,20,30,40,50,60]
+
+    x.unshift("A");
+    console.log(x);
+
+    x.unshift("B", "C");
+    console.log(x);
+
+    //pop
+
+    x = [10,20,30,40,50,60]
+
+    x.pop();
+    console.log(x);
+
+    //shift
+
+    x = [10,20,30,40,50,60]
+
+    x.shift();
+    console.log(x);
+
+    //concat
+
+    A = ["A","B","C"]
+    B = ["D","E","F"]
+
+    var C = A.concat(B);
+    console.log(C);
+
+  //slice
+
+    var y = [10,20,30,40,50,60,70,80,90,100];
+
+    var res = y.slice();
+    console.log(res);
+
+    var res = y.slice(3);
+    console.log(res);
+
+    var res = y.slice(3,8);
+    console.log(res);
+
+    //splice
+
+    var y = [10,20,30,40,50,60,70,80,90,100];
+
+    let removed_items = y.splice(7);
+    console.log("removed_items:" , removed_items);
+    console.log("y:", y);
+
+    var y = [10,20,30,40,50,60,70,80,90,100];  // oni ekements remove krl new elements etnta adda karanw
+
+    removed_items = y.splice(1,5,100,200,300);
+    console.log("removed items:" , removed_items);
+    console.log("y", y);
+
+    var fruits = ["apple", "mango", "orange", "pineapple"];
+
+    console.log(fruits.includes("mango")); //true
+    console.log(fruits.includes("apple"));  //true
+    console.log(fruits.includes("gaduguda")); //false
+
+    //filter
+
+        //-- without filter method;
+
+    var number_list = [1,2,3,4,5,2];
+
+    var even_number_list  = [];
+    for (var i = 0; i <number_list.length; i++){
+        if(number_list[i] %2 ===0){
+            even_number_list.push(number_list[i]);
+        }
+    }
+    console.log("even number list :", even_number_list);
+
+          // -- with filter method;
+
+    var even_number_list = number_list.filter(function (item) {
+        return item%2===0;
+    })
+    console.log("even number list :", even_number_list);
+
+    //ForEach
+
+    var fruits = ["apple","banana","mango","orange"];
+    fruits.forEach(function(fruit){
+        console.log(fruit);
+    })
+
+    //map
+
+    var pro_lan =["java","js","css","mysql"];
+    pro_lan.map((item)=>{
+        console.log(item);
+    })
+
+    pro_lan.map((item,index)=>{
+        console.log(index+" "+" "+item);
+    })
+
+    //sort
+
+    var item_array=[20,30,40,50,60,70,80,90,100,10];
+    // var sorted = item_array.sort();
+    // console.log(sorted);
+
+    var sorted = item_array.sort((a,b)=>a - b);
+    console.log(sorted);
+
+    var sorted2 = item_array.sort((a,b)=>b-a);
+    console.log(sorted2);
+
+    //reverse
+
+    var letters =["A","B","C","D","E","F"];
+    var reversed=letters.reverse();
+    console.log(reversed);
+
+    //toString
+
+    var z = [1,3,5];
+    console.log(z.toString()); //1,3,5
+
+    //join
+
+    var letters = ["A", "B", "C", "D"];
+    console.log(letters.join("*"));
+    console.log(letters.join("="));
+    console.log(letters.join("->"));
+    console.log(letters.join(""));
+    console.log(letters.join("^"));
+
+
+
+
+
+</script>
+
+</body>
+</html>

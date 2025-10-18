@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div{
+      width: 100px;
+      aspect-ratio: 1/1;
+      background-color: red;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+<button>Click</button>
+<div id="box1"></div>
+
+<label for="input1">Enter your name:</label>
+<input type="text" id="input1">
+<h1 id="h1"></h1>
+
+
+<script src="../assest/lib/jquery-3.7.1.min.js"></script>
+<script>
+  // document.getElementsByTagName("button")[0].addEventListener("click",function (){
+  //   console.log("Clicked!");
+  // })
+  $("button").eq(0).on('click', function (){
+    console.log("Clicked!");
+  })
+  $("button").eq(0).on('dblclick', function (){
+    console.log("Double Clicked!");
+  })
+
+  $("#box1").on('mouseenter', function (){
+    console.log("Mouse enter!");
+  })
+
+  $("#box1").on('mouseleave', function (){
+    console.log("Mouse leave!");
+  })
+
+  $("#box1").on('mouseover', function (){
+    console.log("Mouse over!");
+  })
+
+  $("#box1").on('mousedown', function (){
+    console.log("Mouse down!");
+  })
+
+  $("#box1").on('mouseup', function (){
+    console.log("Mouse up!");
+  })
+
+  $("#input1").on('focus', function (){
+    console.log("Input focused!");
+  })
+
+  $("#input1").on('blur', function (){
+    console.log("Input blurred!");
+  })
+
+
+
+  $("#input1").on('keydown', function (){
+    console.log("Key down!");
+  })
+
+  $("#input1").on('keypress', function (){
+    console.log("Key pressed!");
+  })
+
+  $("#input1").on('keyup', function (e){
+    console.log(e.which);
+    if(e.which === 13){
+      var value=$("#input1").val();
+      $("#h1").text(value);
+    }
+  })
+
+
+
+
+
+</script>
+</body>
+</html>

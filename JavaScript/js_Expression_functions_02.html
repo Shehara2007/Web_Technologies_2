@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+   //Function Expressions
+
+   const sayHello = function (){
+       console.log("Hello");
+   }
+   sayHello();
+
+   const sayHello = function(name, Location) {
+       console.log("Hello!"+ name + "Welcome to "+ Location);
+   }
+
+   sayHello("Bum", "America");
+
+   const sayHello = function (name, Location) {
+       return "Hello!"+ name + "Welcome to "+ Location;
+   }
+
+   let msg = sayHello("Bum ", "America");
+   console.log("Msg:" + msg)
+
+</script>
+
+</body>
+</html>
